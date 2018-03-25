@@ -7,7 +7,7 @@
 
 
 #File path:
-file=/usr/share/dict/words
+FILE=/usr/share/dict/words
 
 #Loop in a variable for getting amount of dots in grep "^........$" file command.
 
@@ -23,7 +23,7 @@ if [ ! -z "$2" ]
 	then
 		getRandomWord=$( grep "^"$k"$" $2 | shuf -n 1 )
 else
-		getRandomWord=$( grep "^"$k"$" $file | shuf -n 1 )
+		getRandomWord=$( grep "^"$k"$" $FILE | shuf -n 1 )
 fi
 			
 
